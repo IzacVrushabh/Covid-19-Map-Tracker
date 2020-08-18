@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <title>Covid19Tracker</title>
+    <style type="text/css">
+        #info {
+            display: block;
+            position: relative;
+            /* margin-top: 21px; */
+            /* margin-bottom: 20px; */
+            padding-bottom: 11px;
+            width: 100%;
+            height: 47px;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+            background: black;
+            z-index: 9;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navBar">
+        <div id="logo">
+            <h3 id="name">COVID-19 MAP TRACKER</h3>
+            <img src="../corona1.jpg" alt="Corona logo">
+        </div>
+        <ul>
+            <li class="items"><a href="#">Photos</a></li>
+            <li class="items"><a href="#">Health Tips</a></li>
+
+            <div class="dropdown">
+                <button class="dropbtn">Covid-19</button>
+                <div class="dropdown-content">
+                    <a href="#">Confirmed</a>
+                    <a href="#">Recovered</a>
+                    <a href="#">Deaths</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Help</button>
+                <div class="dropdown-content">
+                    <a href="#">Email Id</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <li class="items"><label for="name"><input type="text" name="name" id="name" placeholder="Search"></label>
+            </li>
+
+
+        </ul>
+    </nav>
+    <div id='map'></div>
+    <pre id="info"></pre>
+
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+<script src="mapbox.js"></script>
+<script src="index.js"></script>
+
+</html>
